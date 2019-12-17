@@ -1,7 +1,9 @@
+#!/usr/bin/env python
 """
     Take a midi file and convert it to parsons code, with a limit and offset
 """
 import mido
+import sys
 
 def midi_to_parsons(midifile, limit=16, offset=0):
     """
@@ -40,3 +42,6 @@ def midi_to_parsons(midifile, limit=16, offset=0):
             offset -= 1
 
     return parsons
+
+if __name__ == "__main__":
+    print(midi_to_parsons(sys.argv[1]))
