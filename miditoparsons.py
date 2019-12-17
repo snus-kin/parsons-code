@@ -40,5 +40,3 @@ def midi_to_parsons(midifile, limit=16, offset=0):
             offset -= 1
 
     return parsons
-
-print(midi_to_parsons('./BRAND1.MID', 16, 0))
