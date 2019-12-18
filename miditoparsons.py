@@ -25,13 +25,13 @@ def midi_to_parsons(midifile, limit=16, offset=0):
 
             # simple comparison
             if message.note > prev:
-                parsons += "U"
+                parsons += "u"
                 prev = message.note
             elif message.note < prev:
-                parsons += "D"
+                parsons += "d"
                 prev = message.note
             elif message.note == prev:
-                parsons += "R"
+                parsons += "r"
                 prev = message.note
 
             #increment count
