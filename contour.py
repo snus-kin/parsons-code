@@ -1,8 +1,10 @@
+#!/usr/bin/env python
 """ Parsons code to contour plot """
 
 import sys
 
 def contour(code):
+    print(code)
     if code[0] != "*":
         raise ValueError("Parsons Code must start with '*'")
 

@@ -24,7 +24,7 @@ def midi_to_parsons(midifile, limit=16, offset=0):
                 parsons += "*"
 
             # simple comparison
-            if message.note > prev:
+            elif message.note > prev:
                 parsons += "u"
                 prev = message.note
             elif message.note < prev:
